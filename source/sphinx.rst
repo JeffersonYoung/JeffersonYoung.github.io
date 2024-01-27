@@ -3,31 +3,27 @@
 
 引言
 =======
-
 作为第一篇笔记，当然是介绍一下工具的。因为是python用户，对rst比较熟一点，所以选用了sphinx作为工具。
 因为是笔记，没有文档那么系统，所以就当作博客托管在GitHub上。
 
 安装Sphinx
 ===========
+.. code:: shell
 
-    .. code:: shell
-
-        pip install sphinx
+    pip install sphinx
 
 初始化项目
 ==========
+.. code:: shell
 
-    .. code:: shell
+    sphinx-quickstart
 
-        sphinx-quickstart
-
-然后根据提示输入项目名称、作者、版本号、语言等信息。
-为了更好地管理文件，在 `Separate source and build directories (y/n) [n]` （是否将源码和编译后的文件分开？）一般会选择 y
-语言选择简体中文的话输入zh_CN
-项目名称、作者、版本号就随意
+- 然后根据提示输入项目名称、作者、版本号、语言等信息。
+- 为了更好地管理文件，在 `Separate source and build directories (y/n) [n]` （是否将源码和编译后的文件分开）中一般会选择 y
+- 语言选择简体中文的话输入 ``zh_CN``
+- 项目名称、作者、版本号就随意
 
 项目初始化之后，文件夹将具有以下结构：
-
     .. code::
 
         .
@@ -57,17 +53,14 @@ Sphinx 的默认主题是 alabaster, `Sphinx的官网 <https://sphinx-themes.org
 
 下载
 ```````
+.. code:: shell
 
-    .. code:: shell
-
-        pip install sphinx_rtd_theme
+    pip install sphinx_rtd_theme
 
 修改配置文件
 `````````````
 
 下载完成后，在配置文件 ``source/conf.py`` 中将 ``html_theme`` 修改为 ``sphinx_rtd_theme``
-即：
-
     .. code:: python
 
         # html_theme = 'alabaster'
@@ -88,13 +81,11 @@ Read the Docs 通常是软件的说明文档，对于博客来说不是很适合
 ~~~~~~
 
 与 ``sphinx-rtd-theme`` 相仿
-
     .. code:: shell
 
         pip install sphinx-bootstrap-theme
 
 下载完成后，配置文件需要修改为
-
     .. code:: python
 
         # html_theme = 'alabaster'
@@ -109,12 +100,20 @@ Read the Docs 通常是软件的说明文档，对于博客来说不是很适合
 可以参考 https://zhuanlan.zhihu.com/p/28321740
 
 为了将项目展示到GitHub上，需要将输出的文件放置在根目录下或者 ``docs`` 目录下。
-在Windows上可以在 ``make.bat`` 末尾添加以下代码实现
+Windows上可以在 ``make.bat`` 末尾添加以下代码实现
 
-    .. code:: 
+.. code:: 
 
-        del /q /s docs
-        xcopy build\html docs /e
+    del /q /s docs
+    xcopy build\html docs /e
+
+.. 这样做欠妥，考虑合理一点的做法
+
+在GitHub上部署时，为了正常显示 ``_`` 开头的文件和目录，需要在根目录和 ``docs`` 目录下添加空白文件 ``.nojekyll`` 。
+
+.. admonition:: 注意
+
+    如果没有 ``.nojekyll`` 文件，静态资源将不能正常显示，因为默认状态下它们会存放在 ``docs/_static`` 目录下
 
 Reference
 ============

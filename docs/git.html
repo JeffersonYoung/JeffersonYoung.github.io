@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>git 的使用 &#8212; note  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=4468db6d" />
+    <script src="_static/documentation_options.js?v=ab3e9284"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="使用Sphinx记录笔记" href="sphinx.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          note</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sphinx.html">使用Sphinx记录笔记</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">git 的使用</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">git 的使用</a><ul>
+<li><a class="reference internal" href="#id1">下载</a></li>
+<li><a class="reference internal" href="#id2">初始化仓库</a></li>
+<li><a class="reference internal" href="#gitignore">.gitignore 文件</a><ul>
+<li><a class="reference internal" href="#id3">语法</a></li>
+<li><a class="reference internal" href="#id4">优先级</a></li>
+<li><a class="reference internal" href="#id5">调试</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id6">配置文件</a><ul>
+<li><a class="reference internal" href="#id7">设置用户名和邮件地址</a></li>
+<li><a class="reference internal" href="#id8">代理配置</a></li>
+<li><a class="reference internal" href="#id9">查看配置</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#reference">Reference</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="sphinx.html" title="Previous Chapter: 使用Sphinx记录笔记"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 使用Sphinx记录笔记</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/git.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="git">
+<h1>git 的使用<a class="headerlink" href="#git" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>下载<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>略</p>
+</section>
+<section id="id2">
+<h2>初始化仓库<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">init</span>
+</pre></div>
+</div>
+</section>
+<section id="gitignore">
+<h2>.gitignore 文件<a class="headerlink" href="#gitignore" title="Link to this heading">¶</a></h2>
+<p>在使用Git的过程中，有的文件比如日志，临时文件，编译的中间文件等不要提交到代码仓库，这时就要设置相应的忽略规则，来忽略这些文件的提交。
+.gitignore文件声明哪些文件不希望添加到git中去，这样在 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> 的时候这些文件就会被自动忽略掉。</p>
+<div class="admonition- admonition">
+<p class="admonition-title">注意</p>
+<p>创建.gitignore文件之前push的项目文件不会受到影响，所以务必在提交之前创建好.gitignore文件</p>
+</div>
+<section id="id3">
+<h3>语法<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<p>在 .gitignore 文件中，每一行的忽略规则的语法如下：</p>
+<ol class="arabic simple">
+<li><p>空格不匹配任意文件，可作为分隔符，可用反斜杠转义</p></li>
+<li><p>以 <code class="docutils literal notranslate"><span class="pre">#</span></code> 开头的行都会被 Git 忽略。即#开头的文件标识注释，可以使用反斜杠进行转义。</p></li>
+<li><p>可以使用标准的glob模式匹配。所谓的glob模式是指shell所使用的简化了的正则表达式。</p></li>
+<li><p>以斜杠 <code class="docutils literal notranslate"><span class="pre">/</span></code> 开头表示目录；”/”结束的模式只匹配文件夹以及在该文件夹路径下的内容，但是不匹配该文件；”/”开始的模式匹配项目跟目录；如果一个模式不包含斜杠，则它匹配相对于当前 .gitignore 文件路径的内容，如果该模式不在 .gitignore 文件中，则相对于项目根目录。</p></li>
+<li><p>以星号 <code class="docutils literal notranslate"><span class="pre">*</span></code> 通配多个字符，即匹配多个任意字符；使用两个星号 <code class="docutils literal notranslate"><span class="pre">**</span></code> 表示匹配任意中间目录，比如 <code class="docutils literal notranslate"><span class="pre">a/**/z</span></code> 可以匹配 <code class="docutils literal notranslate"><span class="pre">a/z</span></code>, <code class="docutils literal notranslate"><span class="pre">a/b/z</span></code> 或 <code class="docutils literal notranslate"><span class="pre">a/b/c/z</span></code> 等。</p></li>
+<li><p>以问号 <code class="docutils literal notranslate"><span class="pre">?</span></code> 通配单个字符，即匹配一个任意字符；</p></li>
+<li><p>以方括号 <code class="docutils literal notranslate"><span class="pre">[]</span></code>  包含单个字符的匹配列表，即匹配任何一个列在方括号中的字符。比如[abc]表示要么匹配一个a，要么匹配一个b，要么匹配一个c；如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配。比如[0-9]表示匹配所有0到9的数字，[a-z]表示匹配任意的小写字母）。</p></li>
+<li><p>以叹号 <code class="docutils literal notranslate"><span class="pre">!</span></code> 表示不忽略(跟踪)匹配到的文件或目录，即要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。需要特别注意的是：如果文件的父目录已经被前面的规则排除掉了，那么对这个文件用”!”规则是不起作用的。也就是说”!”开头的模式表示否定，该文件将会再次被包含，如果排除了该文件的父级目录，则使用”!”也不会再次被包含。可以使用反斜杠进行转义。</p></li>
+</ol>
+</section>
+<section id="id4">
+<h3>优先级<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<p>在 .gitingore 文件中，每一行指定一个忽略规则，Git检查忽略规则的时候有多个来源，它的优先级如下（由高到低）：</p>
+<ol class="arabic simple">
+<li><p>从命令行中读取可用的忽略规则</p></li>
+<li><p>当前目录定义的规则</p></li>
+<li><p>父级目录定义的规则，依次递推</p></li>
+<li><p>$GIT_DIR/info/exclude 文件中定义的规则</p></li>
+<li><p>core.excludesfile中定义的全局规则</p></li>
+</ol>
+<div class="admonition- admonition">
+<p class="admonition-title">注意</p>
+<p>在同一个.ignore配置文件中，规则是按行从上到下进行匹配的，意味着如果前面的规则匹配的范围更大，后面的规则将不会生效</p>
+</div>
+</section>
+<section id="id5">
+<h3>调试<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">check-ignore</span></code> 命令用来检查 .gitignore 中的错误。</p>
+</section>
+</section>
+<section id="id6">
+<h2>配置文件<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<p>Windows下，git的全局配置文件在 <code class="docutils literal notranslate"><span class="pre">~\.gitconfig</span></code> 文件中</p>
+<section id="id7">
+<h3>设置用户名和邮件地址<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<p>在首次提交之前，需要设置好用户名和邮件地址。一般来说，设置一个全局的用户名和邮件地址就足够了。我们可以通过以下命令来完成设置
+.. code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Your Name&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;youremail@yourdomain.com&quot;</span>
+</pre></div>
+</div>
+<p>有时需要为某一个仓库单独设置用户名和邮件地址，去掉选项中的 <code class="docutils literal notranslate"><span class="pre">--global</span></code> 即可
+.. code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Your Name&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;youremail@yourdomain.com&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h3>代理配置<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.proxy<span class="w"> </span><span class="s2">&quot;http://127.0.0.1:7890&quot;</span>
+
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>https.proxy<span class="w"> </span><span class="s2">&quot;http://127.0.0.1:7890&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="id9">
+<h3>查看配置<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--list
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+</section>
+<section id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/120862483">https://zhuanlan.zhihu.com/p/120862483</a></p></li>
+<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/52885189">https://zhuanlan.zhihu.com/p/52885189</a></p></li>
+<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/121471974">https://zhuanlan.zhihu.com/p/121471974</a></p></li>
+</ol>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2024, jefferson.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.2.6.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

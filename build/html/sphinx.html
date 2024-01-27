@@ -13,6 +13,7 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="git 的使用" href="git.html" />
     <link rel="prev" title="我的个人笔记" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -53,6 +54,7 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">使用Sphinx记录笔记</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">git 的使用</a></li>
 </ul>
 </ul>
 </li>
@@ -97,6 +99,10 @@
     <a href="index.html" title="Previous Chapter: 我的个人笔记"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; 我的个人笔记</span>
     </a>
   </li>
+  <li>
+    <a href="git.html" title="Next Chapter: git 的使用"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">git 的使用 &raquo;</span>
+    </a>
+  </li>
               
             
             
@@ -137,26 +143,23 @@
 </section>
 <section id="id2">
 <h2>安装Sphinx<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx
 </pre></div>
 </div>
-</div></blockquote>
 </section>
 <section id="id3">
 <h2>初始化项目<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
 </pre></div>
 </div>
-</div></blockquote>
-<p>然后根据提示输入项目名称、作者、版本号、语言等信息。
-为了更好地管理文件，在 <cite>Separate source and build directories (y/n) [n]</cite> （是否将源码和编译后的文件分开？）一般会选择 y
-语言选择简体中文的话输入zh_CN
-项目名称、作者、版本号就随意</p>
-<p>项目初始化之后，文件夹将具有以下结构：</p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
+<ul class="simple">
+<li><p>然后根据提示输入项目名称、作者、版本号、语言等信息。</p></li>
+<li><p>为了更好地管理文件，在 <cite>Separate source and build directories (y/n) [n]</cite> （是否将源码和编译后的文件分开）中一般会选择 y</p></li>
+<li><p>语言选择简体中文的话输入 <code class="docutils literal notranslate"><span class="pre">zh_CN</span></code></p></li>
+<li><p>项目名称、作者、版本号就随意</p></li>
+</ul>
+<dl>
+<dt>项目初始化之后，文件夹将具有以下结构：</dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
 ├── build/              生成文件的目录
 ├── Makefile            编译脚本, linux 编译时用
 ├── make.bat            Windows 的编译脚本
@@ -167,7 +170,8 @@
     └── _templates/     模板目录
 </pre></div>
 </div>
-</div></blockquote>
+</dd>
+</dl>
 </section>
 <section id="id4">
 <h2>编译<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
@@ -182,22 +186,19 @@
 </section>
 <section id="id8">
 <h3>下载<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
-<blockquote>
-<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx_rtd_theme
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx_rtd_theme
 </pre></div>
 </div>
-</div></blockquote>
 </section>
 <section id="id9">
 <h3>修改配置文件<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
-<p>下载完成后，在配置文件 <code class="docutils literal notranslate"><span class="pre">source/conf.py</span></code> 中将 <code class="docutils literal notranslate"><span class="pre">html_theme</span></code> 修改为 <code class="docutils literal notranslate"><span class="pre">sphinx_rtd_theme</span></code>
-即：</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># html_theme = &#39;alabaster&#39;</span>
+<dl>
+<dt>下载完成后，在配置文件 <code class="docutils literal notranslate"><span class="pre">source/conf.py</span></code> 中将 <code class="docutils literal notranslate"><span class="pre">html_theme</span></code> 修改为 <code class="docutils literal notranslate"><span class="pre">sphinx_rtd_theme</span></code></dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># html_theme = &#39;alabaster&#39;</span>
 <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
 </pre></div>
 </div>
-</div></blockquote>
+</dd>
+</dl>
 <div class="admonition- admonition">
 <p class="admonition-title">注意</p>
 <p>主题名称中使用下划线而不是连字符</p>
@@ -209,28 +210,37 @@
 本文使用的是 <code class="docutils literal notranslate"><span class="pre">bootstrap</span></code> 主题，安装方法与上文中提到的 <code class="docutils literal notranslate"><span class="pre">sphinx-rtd-theme</span></code> 有一定差异，下面简单介绍</p>
 <section id="id10">
 <h4>下载<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
-<p>与 <code class="docutils literal notranslate"><span class="pre">sphinx-rtd-theme</span></code> 相仿</p>
-<blockquote>
-<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx-bootstrap-theme
+<dl>
+<dt>与 <code class="docutils literal notranslate"><span class="pre">sphinx-rtd-theme</span></code> 相仿</dt><dd><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx-bootstrap-theme
 </pre></div>
 </div>
-</div></blockquote>
-<p>下载完成后，配置文件需要修改为</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># html_theme = &#39;alabaster&#39;</span>
+</dd>
+<dt>下载完成后，配置文件需要修改为</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># html_theme = &#39;alabaster&#39;</span>
 
 <span class="kn">import</span> <span class="nn">sphinx_bootstrap_theme</span>
 <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;bootstrap&#39;</span>
 <span class="n">html_theme_path</span> <span class="o">=</span> <span class="n">sphinx_bootstrap_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></blockquote>
+</dd>
+</dl>
 </section>
 </section>
 </section>
 <section id="id11">
 <h2>部署<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
 <p>可以参考 <a class="reference external" href="https://zhuanlan.zhihu.com/p/28321740">https://zhuanlan.zhihu.com/p/28321740</a></p>
+<p>为了将项目展示到GitHub上，需要将输出的文件放置在根目录下或者 <code class="docutils literal notranslate"><span class="pre">docs</span></code> 目录下。
+Windows上可以在 <code class="docutils literal notranslate"><span class="pre">make.bat</span></code> 末尾添加以下代码实现</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="o">/</span><span class="n">q</span> <span class="o">/</span><span class="n">s</span> <span class="n">docs</span>
+<span class="n">xcopy</span> <span class="n">build</span>\<span class="n">html</span> <span class="n">docs</span> <span class="o">/</span><span class="n">e</span>
+</pre></div>
+</div>
+<p>在GitHub上部署时，为了正常显示 <code class="docutils literal notranslate"><span class="pre">_</span></code> 开头的文件和目录，需要在根目录和 <code class="docutils literal notranslate"><span class="pre">docs</span></code> 目录下添加空白文件 <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code> 。</p>
+<div class="admonition- admonition">
+<p class="admonition-title">注意</p>
+<p>如果没有 <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code> 文件，静态资源将不能正常显示，因为默认状态下它们会存放在 <code class="docutils literal notranslate"><span class="pre">docs/_static</span></code> 目录下</p>
+</div>
 </section>
 <section id="reference">
 <h2>Reference<a class="headerlink" href="#reference" title="Link to this heading">¶</a></h2>

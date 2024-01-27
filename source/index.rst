@@ -14,6 +14,7 @@
    :maxdepth: 2
 
    sphinx.rst
+   git.rst
 
 
 .. Indices and tables

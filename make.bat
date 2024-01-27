@@ -32,7 +32,14 @@ goto end
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 
 :end
-popd
 
-del /q /s docs
-xcopy build\html docs /e
+if "%1" == "html" (
+	del /q /s docs
+	xcopy build\html docs /e
+)
+
+if "%1" == "clean" (
+	del /q /s docs
+)
+
+popd
