@@ -33,3 +33,6 @@ goto end
 
 :end
 popd
+
+del /q /s docs
+xcopy build\html docs /e

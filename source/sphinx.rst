@@ -108,6 +108,14 @@ Read the Docs 通常是软件的说明文档，对于博客来说不是很适合
 
 可以参考 https://zhuanlan.zhihu.com/p/28321740
 
+为了将项目展示到GitHub上，需要将输出的文件放置在根目录下或者 ``docs`` 目录下。
+在Windows上可以在 ``make.bat`` 末尾添加以下代码实现
+
+    .. code:: 
+
+        del /q /s docs
+        xcopy build\html docs /e
+
 Reference
 ============
 
